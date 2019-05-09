@@ -2,7 +2,7 @@
 <sdf version='1.6'>
   <model name='lar_chair'>
     <link name='link'>
-      <pose frame=''>0 0 0 0 -0 0</pose>
+      <pose frame=''>0 0 0.38 0 -0 0</pose>
       <inertial>
         <inertia>
           <ixx>1</ixx>
@@ -24,7 +24,7 @@
             <uri>model://lar_chair/meshes/lar_chair.dae</uri>
           </mesh>
         </geometry>
-        <pose frame=''>0 0 0.38 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <cast_shadows>1</cast_shadows>
         <transparency>0</transparency>
         <material>
@@ -36,7 +36,7 @@
       <collision name='collisions'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
-        <pose frame=''>0 -0.02 0.39 0 -0 0</pose>
+        <pose frame=''>0 -0.02 0.01 0 -0 0</pose>
         <geometry>
           <box>
             <size>0.52 0.52 0.78</size>
