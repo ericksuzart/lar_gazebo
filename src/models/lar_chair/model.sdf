@@ -2,7 +2,7 @@
 <sdf version='1.6'>
   <model name='lar_chair'>
     <link name='link'>
-      <pose frame=''>0 0 0.38 0 -0 0</pose>
+      <pose frame=''>0 0 0.40 0 -0 0</pose>
       <inertial>
         <inertia>
           <ixx>1</ixx>
@@ -12,7 +12,7 @@
           <iyz>0</iyz>
           <izz>1</izz>
         </inertia>
-        <mass>1</mass>
+        <mass>4</mass>
         <pose frame=''>0 0 0 0 -0 0</pose>
       </inertial>
       <self_collide>0</self_collide>

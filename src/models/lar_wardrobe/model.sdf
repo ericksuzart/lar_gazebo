@@ -2,7 +2,7 @@
 <sdf version='1.6'>
   <model name='lar_wardrobe'>
     <link name='link'>
-      <pose frame=''>0 0 0.565 0 -0 0</pose>
+      <pose frame=''>0 0 0.585 0 -0 0</pose>
       <inertial>
         <inertia>
           <ixx>1</ixx>
