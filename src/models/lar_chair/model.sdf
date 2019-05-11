@@ -38,9 +38,10 @@
         <max_contacts>10</max_contacts>
         <pose frame=''>0 -0.02 0.01 0 -0 0</pose>
         <geometry>
-          <box>
-            <size>0.52 0.52 0.78</size>
-          </box>
+            <mesh>
+              <uri>model://lar_chair/meshes/lar_chair.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
         </geometry>
         <surface>
           <friction>
