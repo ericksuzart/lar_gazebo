@@ -7,19 +7,19 @@ Repository of the **3D model** of the Robotics Laboratory (*LAR*) of UFBA to be 
 
 Use *git* to clone this repository to you workspace:
 
-```bash
+```{bash}
 git clone https://github.com/ericksuzart/lar_gazebo.git
 ```
 
 Go to the folder where you cloned this package.
 
-```bash
+```{bash}
 cd ~/my_workspace/src/lar_gazebo/src/models/
 ```
 
 Then copy all models to *gazebo models* folder:
 
-```bash
+```{bash}
 cp -r * /home/user/.gazebo/models/
 ```
 
@@ -29,19 +29,34 @@ cp -r * /home/user/.gazebo/models/
 
 To use lar with [Husky](http://wiki.ros.org/Robots/Husky) you need first to init the robot through empty world launch file:
 
-```bash
+```{bash}
 roslaunch husky_gazebo husky_empty_world.launch
 ```
 
-Then, in *Gazebo*, include  the models you want through *insert bar*. If you've getting lost visit the [tutorial](http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b2) of *gazebo GUI* (Graphical User Interface).
+Then, in *Gazebo*, include  the models you want through *insert bar*.
+
+> If you've getting lost visit the [tutorial](http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b2) of *gazebo GUI* (Graphical User Interface).
 
 ### I want only to see the models
 
 Sure, open gazebo and include all models you want or open it through world file:
 
-```bash
+```{bash}
 cd ~/my_workspace/src/lar_gazebo/src/worlds/ && gazebo lar.world
 ```
+
+### Disable shadows
+
+If you open through world file, it's open automatically with shadows disabled.
+
+Else, you have to disable directly on Gazebo GUI:
+
+1. With gazebo open, go to left panel and find *Scene*, in world tab;
+2. Click on the *Scene*;
+3. Now search for *shadows*;
+4. And, finally uncheck the square right after *shadows*;
+
+> If you've getting lost visit the [tutorial](http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b2) of *gazebo GUI* (Graphical User Interface).
 
 ## Known Issues
 
