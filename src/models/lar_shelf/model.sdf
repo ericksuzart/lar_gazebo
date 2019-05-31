@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='lar_shelf'>
-    <link name='link'>
+    <link name='shelf'>
       <pose frame=''>0 0 1.01 0 -0 0</pose>
       <inertial>
         <inertia>

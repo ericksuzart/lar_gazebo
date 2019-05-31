@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='lar_table_pc'>
-    <link name='link'>
+    <link name='pc_table'>
       <pose frame=''>0 0 0.370 0 -0 0</pose>
       <inertial>
         <inertia>
@@ -25,7 +25,7 @@
           </mesh>
         </geometry>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <cast_shadows>1</cast_shadows>
+        <cast_shadows>0</cast_shadows>
         <transparency>0</transparency>
         <material>
           <shader type='vertex'>
