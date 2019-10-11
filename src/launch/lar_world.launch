@@ -13,7 +13,7 @@
     <arg name="world_name" value="$(arg world_name)"/>
     <arg name="debug" value="false"/>
     <arg name="gui" value="true"/>
-    <arg name="paused" value="true"/>
+    <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="headless" value="false"/>
   </include>

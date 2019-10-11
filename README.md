@@ -14,6 +14,16 @@ Use *git* to clone this repository to you workspace:
 git clone https://github.com/ericksuzart/lar_gazebo.git
 ```
 
+Then, you must build your workspace with catkin:
+
+```{bash}
+catkin build
+```
+
+> **_NOTE:_** you should use catkin tools to work propely with this package. Checkout [catkin tools](https://catkin-tools.readthedocs.io/en/latest/index.html) documentation.
+
+### Include lar models into Gazebo models
+
 Go to the folder where you cloned this package.
 
 ```{bash}
@@ -26,19 +36,23 @@ Then copy all models to *gazebo models* folder:
 cp -r * /home/user/.gazebo/models/
 ```
 
+Now you should see the models in Gazebo insert bar:
+
+![3d models of LaR in gazebo bar](https://drive.google.com/uc?export=view&id=1nl2I0OFktjWRyEZr3KRwXJQaY4wk6EsP
+)
+
+
 ## Usage
 
-### With Husky
+### With [Husky](http://wiki.ros.org/Robots/Husky)
 
-To use lar with [Husky](http://wiki.ros.org/Robots/Husky) you need first to init the robot through empty world launch file:
+You can do it by typing in your terminal:
 
 ```{bash}
-roslaunch husky_gazebo husky_empty_world.launch
+roslaunch lar_gazebo lar_world.launch
 ```
 
-Then, in *Gazebo*, include  the models you want through *insert bar*.
-
-> If you've getting lost visit the [tutorial](http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b2) of *gazebo GUI* (Graphical User Interface).
+> **_NOTE:_**  You must install this package in your workspace, build, and source.
 
 ### I want only to see the models
 
@@ -59,12 +73,8 @@ Else, you have to disable directly on Gazebo GUI:
 3. Now search for *shadows*;
 4. And, finally uncheck the square right after *shadows*;
 
-> If you've getting lost visit the [tutorial](http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b2) of *gazebo GUI* (Graphical User Interface).
+> **_NOTE:_** If you've getting lost visit the [tutorial](http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b2) of *gazebo GUI* (Graphical User Interface).
 
-## Known Issues
-
-* The launch file doesn't work to open the model.
-* If you open this model through gazebo and try to spawn husky, will not work.
 
 ## Contributing
 
