@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
-    <!-- environment args -->
-    <arg name="debug" default="false" />
-    <arg name="gui" default="false" />
-    <arg name="pause" default="true" />
-    <arg name="world" default="$(find lar_gazebo)/worlds/lar.world"/>
+  <!-- environment args -->
+  <arg name="world_name" default="$(find lar_gazebo)src/worlds/lar.world"/>-->
 
-    <!-- include gazebo_ros launcher -->
-    <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(arg world)"/>
-        <arg name="debug" value="$(arg debug)"/>
-        <arg name="gui" value="$(arg gui)"/>
-        <arg name="paused" value="$(arg pause)"/>
-        <arg name="use_sim_time" value="true"/>
-    </include>
+  <!--  husky_gazebo args -->
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinect_enabled" default="false"/>
+
+  <!-- include gazebo_ros launcher -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+    <arg name="debug" value="false"/>
+    <arg name="gui" value="true"/>
+    <arg name="paused" value="true"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="headless" value="false"/>
+  </include>
+
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+    <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+    <arg name="x" value="2.0"/>
+    <arg name="y" value="-2.5"/>
+    <arg name="z" value="0.152280"/>
+    <arg name="yaw" value="0.0"/>
+  </include>
 </launch>
