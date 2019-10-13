@@ -15,7 +15,14 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   rviz
   xacro
+  gazebo_ros
 )
+
+# Depend on system install of Gazebo
+find_package(gazebo REQUIRED)
+
+link_directories(${GAZEBO_LIBRARY_DIRS})
+include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
 
 ###################################
 ## catkin specific configuration ##
@@ -30,7 +37,9 @@ catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES lar_gazebo
 #  CATKIN_DEPENDS joint_state_publisher robot_state_publisher roscpp roslaunch rospy rviz xacro
-#  DEPENDS system_lib
+  DEPENDS
+    roscpp
+    gazebo_ros
 )
 
 roslaunch_add_file_check(src/launch)

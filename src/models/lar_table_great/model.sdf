@@ -25,7 +25,7 @@
           </mesh>
         </geometry>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <cast_shadows>1</cast_shadows>
+        <cast_shadows>0</cast_shadows>
         <transparency>0</transparency>
         <material>
           <shader type='vertex'>
