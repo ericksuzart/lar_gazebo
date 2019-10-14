@@ -13,7 +13,7 @@
     </include>
 
     <include>
-      <uri> model://lar_floor</uri>
+      <uri> model://lar_shelf</uri>
       <name> shelf </name>
       <pose> 2.5 -4.35 0 0 0 1.57068</pose>
     </include>

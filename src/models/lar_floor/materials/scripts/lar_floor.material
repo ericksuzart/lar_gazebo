@@ -1,0 +1,63 @@
+material lar_floor/visual_1
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../textures/ceramic_floor.jpg
+        // Repeat the texture over the surface
+        scale 0.06 0.05556
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material lar_floor/visual_2
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../textures/ceramic_floor.jpg
+        scale 0.12 0.05
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material lar_floor/visual_6
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../textures/ceramic_floor.jpg
+        scale 0.14 0.02
+        filtering trilinear
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
 
 Repository of the **3D model** of the Robotics Laboratory (*LAR*) of UFBA to be used in the [Gazebo](http://gazebosim.org/).
 
-![3d model of LaR in gazebo](https://drive.google.com/uc?export=view&id=1uXXjb6ia2QoiZ3wRi_qFUjFoO-EgZ79l
+![3d model of LaR in gazebo](https://drive.google.com/uc?export=view&id=1C2L8mL5-BWp6kO7ckzuwOSOE9v2VOULw
 )
 
 ## Installation
@@ -14,7 +14,7 @@ Use *git* to clone this repository to you workspace:
 git clone https://github.com/ericksuzart/lar_gazebo.git
 ```
 
-Then, you must build your workspace with catkin:
+Then, build your workspace:
 
 ```{bash}
 catkin build
@@ -22,49 +22,39 @@ catkin build
 
 > **_NOTE:_** you should use catkin tools to work propely with this package. Checkout [catkin tools](https://catkin-tools.readthedocs.io/en/latest/index.html) documentation.
 
-### Include lar models into Gazebo models
+## Launching
 
-Go to the folder where you cloned this package.
+### The model
 
-```{bash}
-cd ~/my_workspace/src/lar_gazebo/src/models/
-```
-
-Then copy all models to *gazebo models* folder:
+Use the command below in your terminal to setup and launch gazebo with all models of LAR:
 
 ```{bash}
-cp -r * /home/user/.gazebo/models/
+roslaunch lar_gazebo lar_world.launch
 ```
-
-Now you should see the models in Gazebo insert bar:
-
-![3d models of LaR in gazebo bar](https://drive.google.com/uc?export=view&id=1nl2I0OFktjWRyEZr3KRwXJQaY4wk6EsP
-)
-
-
-## Usage
 
 ### With [Husky](http://wiki.ros.org/Robots/Husky)
 
 You can do it by typing in your terminal:
 
 ```{bash}
-roslaunch lar_gazebo lar_world.launch
+roslaunch lar_gazebo lar_husky.launch
 ```
 
-> **_NOTE:_**  You must install this package in your workspace, build, and source.
+> You must install the husky packages of simulation in your machine to perform the command above. Checkout [Simulating Husky](http://wiki.ros.org/husky_gazebo/Tutorials/Simulating%20Husky) documentation to installation tutorial.
 
-### I want only to see the models
+### With [Husky](http://wiki.ros.org/Robots/Husky) and [UR5](http://wiki.ros.org/action/show/universal_robots?action=show&redirect=universal_robot)
 
-Sure, open gazebo and include all models you want or open it through world file:
+Type in your terminal the command below, that will start the lar_gazebo world with husky and UR5 arm:
 
 ```{bash}
-cd ~/my_workspace/src/lar_gazebo/src/worlds/ && gazebo lar.world
+roslaunch lar_gazebo lar_husky_UR5.launch
 ```
+
+> **_NOTE:_**  You must install, besides Husky, ur_gazebo package in your machine. Checkout [ur_gazebo](http://wiki.ros.org/ur_gazebo) documentation to installation tutorial.
 
 ### Disable shadows
 
-If you open through world file, it's open automatically with shadows disabled.
+If you open through the launchers, it's open automatically with shadows disabled.
 
 Else, you have to disable directly on Gazebo GUI:
 

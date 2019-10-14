@@ -19,21 +19,17 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
         <visual name='visual_1'>
-            <pose frame=''>0 0 0.01 0 -0 0</pose>
+            <pose frame=''>3.2 -0.985 0.01 0 -0 0</pose>
             <geometry>
                 <box>
-                    <size>10 7.0 0.02</size>
+                    <size>3.6 5.03 0.02</size>
                 </box>
             </geometry>
             <material>
-                <lighting>1</lighting>
-                <ambient>0.3 0.3 0.3 1</ambient>
-                <diffuse>0.7 0.7 0.7 1</diffuse>
-                <specular>0.01 0.01 0.01 1</specular>
-                <emissive>0 0 0 1</emissive>
-                <shader type='vertex'>
-                    <normal_map>__default__</normal_map>
-                </shader>
+              <script>
+                <uri> model://lar_floor/materials/scripts/lar_floor.material</uri>
+                <name> lar_floor/visual_1 </name>
+              </script>
             </material>
             <cast_shadows>0</cast_shadows>
             <transparency>0</transparency>
@@ -46,14 +42,74 @@
                 </box>
             </geometry>
             <material>
-                <lighting>1</lighting>
-                <ambient>0.3 0.3 0.3 1</ambient>
-                <diffuse>0.7 0.7 0.7 1</diffuse>
-                <specular>0.01 0.01 0.01 1</specular>
-                <emissive>0 0 0 1</emissive>
-                <shader type='vertex'>
-                    <normal_map>__default__</normal_map>
-                </shader>
+              <script>
+                <uri> model://lar_floor/materials/scripts/lar_floor.material</uri>
+                <name> lar_floor/visual_2 </name>
+              </script>
+            </material>
+            <cast_shadows>0</cast_shadows>
+            <transparency>0</transparency>
+        </visual>
+        <visual name='visual_3'>
+            <pose frame=''>-1.825 -1.01 0.01 0 -0 0</pose>
+            <geometry>
+                <box>
+                    <size>6.35 4.98 0.02</size>
+                </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+            <cast_shadows>0</cast_shadows>
+            <transparency>0</transparency>
+        </visual>
+        <visual name='visual_4'>
+            <pose frame=''>1.375 -0.985 0.01 0 -0 0</pose>
+            <geometry>
+                <box>
+                    <size>0.05 5.03 0.02</size>
+                </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/DarkYellow  </name>
+              </script>
+            </material>
+            <cast_shadows>0</cast_shadows>
+            <transparency>0</transparency>
+        </visual>
+        <visual name='visual_5'>
+            <pose frame=''>-1.825 1.505 0.01 0 -0 0</pose>
+            <geometry>
+                <box>
+                    <size>6.35 0.05 0.02</size>
+                </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/DarkYellow  </name>
+              </script>
+            </material>
+            <cast_shadows>0</cast_shadows>
+            <transparency>0</transparency>
+        </visual>
+        <visual name='visual_6'>
+            <pose frame=''>0 2.515 0.01 0 -0 0</pose>
+            <geometry>
+                <box>
+                    <size>10 1.97 0.02</size>
+                </box>
+            </geometry>
+            <material>
+              <script>
+                <uri> model://lar_floor/materials/scripts/lar_floor.material</uri>
+                <name> lar_floor/visual_6 </name>
+              </script>
             </material>
             <cast_shadows>0</cast_shadows>
             <transparency>0</transparency>

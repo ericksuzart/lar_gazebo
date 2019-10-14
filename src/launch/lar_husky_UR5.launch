@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
-  <!-- environment args -->
+  <!-- gazebo args -->
   <arg name="world_name" default="$(find lar_gazebo)src/worlds/lar.world" doc="Default world"/>-->
   <arg name="paused" default="false" doc="Starts gazebo in paused mode" />
   <arg name="gui" default="true" doc="Starts gazebo gui" />
@@ -9,29 +9,19 @@
   <!--  husky_gazebo args -->
   <arg name="laser_enabled" default="true" doc="Enable husky laser"/>
   <arg name="kinect_enabled" default="false" doc="Enable husky kinect"/>
+  <arg name="robot_namespace" default="/husky"/>
 
   <!--  ur5_gazebo args-->
-  <arg name="limited" default="false"  doc="If true, limits joint range [-PI, PI] on all joints." />
+  <arg name="limited" default="true"  doc="If true, limits joint range [-PI, PI] on all joints." />
 
-  <!-- include gazebo_ros launcher -->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  <!-- include lar_gazebo with husky launcher -->
+  <include file="$(find lar_gazebo)src/launch/lar_husky.launch">
     <arg name="world_name" value="$(arg world_name)"/>
-    <arg name="debug" value="false"/>
     <arg name="gui" value="$(arg gui)"/>
     <arg name="paused" value="$(arg paused)"/>
-    <arg name="use_sim_time" value="true"/>
-    <arg name="headless" value="false"/>
-  </include>
-
-  <!--include husky_gazebo launcher-->
-  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
     <arg name="laser_enabled" value="$(arg laser_enabled)"/>
     <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
-    <arg name="robot_namespace" value="/husky"/>
-    <arg name="x" value="2.0"/>
-    <arg name="y" value="-2.5"/>
-    <arg name="z" value="0.02"/>
-    <arg name="yaw" value="3.1415"/>
+    <arg name="robot_namespace" value="$(arg robot_namespace)"/>
   </include>
 
   <!-- include ur_gazebo launchers -->
@@ -42,19 +32,29 @@
   </include>
 
   <!--push robot_description to factory and spawn robot in gazebo -->
-  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model"
+  <node name="spawn_gazebo_model"
+        pkg="gazebo_ros"
+        type="spawn_model"
         args="-urdf
               -param robot_description
-              -model /ur5
+              -model robot
               -x -4.40
               -y -1.80
               -z 0.874
               -Y 0.0"
-
-        respawn="false" output="screen" />
+        respawn="false"
+        output="screen" />
 
   <include file="$(find ur_gazebo)/launch/controller_utils.launch"/>
-  <rosparam file="$(find ur_gazebo)/controller/arm_controller_ur5.yaml" command="load"/>
-  <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
+
+  <rosparam file="$(find ur_gazebo)/controller/arm_controller_ur5.yaml"
+            command="load"/>
+
+  <node name="arm_controller_spawner"
+        pkg="controller_manager"
+        type="controller_manager"
+        args="spawn arm_controller"
+        respawn="false"
+        output="screen"/>
 
 </launch>

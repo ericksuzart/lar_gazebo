@@ -336,10 +336,10 @@
       </model>
 
       <model name='lar_shelf'>
-        <pose frame=''>2.5 -4.35 0 0 0 1.57068</pose>
+        <pose frame=''>3.2 -4.35 0 0 0 1.57068</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>2.5 -4.35 0 0 0 1.57068</pose>
+          <pose frame=''>3.2 -4.35 0 0 0 1.57068</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -369,10 +369,10 @@
       </model>
 
       <model name='lar_table_great_0'>
-        <pose frame=''>-4.406 -3.35 0 0 0 0</pose>
+        <pose frame=''>1.9 -3.35 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-4.406 -3.35 0 0 0 0</pose>
+          <pose frame=''>1.9 -3.35 0 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>

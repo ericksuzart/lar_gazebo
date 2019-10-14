@@ -28,7 +28,7 @@
         <cast_shadows>0</cast_shadows>
         <transparency>0</transparency>
         <material>
-          <shader type='vertex'>lar_chair/meshes/lar_chair.dae
+          <shader type='vertex'>
             <normal_map>__default__</normal_map>
           </shader>
         </material>
