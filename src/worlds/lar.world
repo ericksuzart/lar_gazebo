@@ -144,14 +144,6 @@
       </include>
     </model>
 
-    <model name='lar_table_great_2'>
-      <include>
-        <uri> model://lar_table_great</uri>
-        <name> great_table_2 </name>
-        <static>1</static>
-      </include>
-    </model>
-
     <model name='lar_table_pc_0'>
       <include>
         <uri> model://lar_table_pc</uri>
@@ -336,10 +328,10 @@
       </model>
 
       <model name='lar_shelf'>
-        <pose frame=''>3.2 -4.35 0 0 0 1.57068</pose>
+        <pose frame=''>4.0 -4.35 0 0 0 1.57068</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>3.2 -4.35 0 0 0 1.57068</pose>
+          <pose frame=''>4.0 -4.35 0 0 0 1.57068</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -369,10 +361,10 @@
       </model>
 
       <model name='lar_table_great_0'>
-        <pose frame=''>1.9 -3.35 0 0 0 0</pose>
+        <pose frame=''>1.9 -3.0 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.9 -3.35 0 0 0 0</pose>
+          <pose frame=''>1.9 -3.0 0 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -380,17 +372,6 @@
       </model>
 
       <model name='lar_table_great_1'>
-        <pose frame=''>-4.406 -0.9 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-4.406 -0.9 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-
-      <model name='lar_table_great_2'>
         <pose frame=''>-0.55 4.15 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>

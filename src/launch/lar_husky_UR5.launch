@@ -38,8 +38,8 @@
         args="-urdf
               -param robot_description
               -model /ur5
-              -x -4.40
-              -y -1.80
+              -x 1.90
+              -y -2.40
               -z 0.874
               -Y 0.0"
         respawn="false"
