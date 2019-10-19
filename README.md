@@ -3,8 +3,8 @@
 
 Repository of the **3D model** of the Robotics Laboratory (*LAR*) of UFBA to be used in the [Gazebo](http://gazebosim.org/).
 
-![3d model of LaR in gazebo](https://drive.google.com/uc?export=view&id=1C2L8mL5-BWp6kO7ckzuwOSOE9v2VOULw
-)
+![3d model of LaR in gazebo](https://drive.google.com/uc?export=view&id=1uXXjb6ia2QoiZ3wRi_qFUjFoO-EgZ79l)
+
 
 ## Installation
 
