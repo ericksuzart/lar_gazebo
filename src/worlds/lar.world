@@ -280,6 +280,22 @@
       </include>
     </model>
 
+    <model name='box_0'>
+      <include>
+        <uri> model://box</uri>
+        <name> box_0 </name>
+        <static>1</static>
+      </include>
+    </model>
+
+    <model name='box_1'>
+      <include>
+        <uri> model://box</uri>
+        <name> box_1 </name>
+        <static>1</static>
+      </include>
+    </model>
+
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose frame=''>5.11132 -5.72045 8.03755 0 0.771625 2.27118</pose>
@@ -563,6 +579,28 @@
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>2.84873 -0.278849 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
+      <model name='box_0'>
+        <pose frame=''>-0.80 -2.3 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.80 -2.3 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
+      <model name='box_1'>
+        <pose frame=''>-3.0 -2.2 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-3.0 -2.2 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>

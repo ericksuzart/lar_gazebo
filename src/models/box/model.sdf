@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="box">
+    <static>true</static>
+    <link name="link">
+      <pose frame=''>0 0 0.28 0 -0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.65 0.38 0.50 </size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.65 0.38 0.50 </size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
