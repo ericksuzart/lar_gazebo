@@ -200,6 +200,22 @@
       </include>
     </model>
 
+    <model name='lar_table_pc_7'>
+      <include>
+        <uri> model://lar_table_pc</uri>
+        <name> pc_table_7 </name>
+        <static>1</static>
+      </include>
+    </model>
+
+    <model name='lar_table_pc_8'>
+      <include>
+        <uri> model://lar_table_pc</uri>
+        <name> pc_table_8 </name>
+        <static>1</static>
+      </include>
+    </model>
+
     <model name='lar_chair_0'>
       <include>
         <uri> model://lar_chair</uri>
@@ -272,6 +288,22 @@
       </include>
     </model>
 
+    <model name='lar_chair_9'>
+      <include>
+        <uri> model://lar_chair</uri>
+        <name> chair_9 </name>
+        <static>1</static>
+      </include>
+    </model>
+
+    <model name='lar_chair_10'>
+      <include>
+        <uri> model://lar_chair</uri>
+        <name> chair_10 </name>
+        <static>1</static>
+      </include>
+    </model>
+
     <model name='lar_table_circular'>
       <include>
         <uri> model://lar_table_circular</uri>
@@ -292,6 +324,14 @@
       <include>
         <uri> model://box</uri>
         <name> box_1 </name>
+        <static>1</static>
+      </include>
+    </model>
+
+    <model name='lar_cabinet'>
+      <include>
+        <uri> model://lar_cabinet</uri>
+        <name> cabinet </name>
         <static>1</static>
       </include>
     </model>
@@ -377,10 +417,10 @@
       </model>
 
       <model name='lar_table_great_0'>
-        <pose frame=''>1.9 -3.0 0 0 0 0</pose>
+        <pose frame=''>1.9 -3.33 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.9 -3.0 0 0 0 0</pose>
+          <pose frame=''>1.9 -3.33 0 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -475,6 +515,28 @@
         </link>
       </model>
 
+      <model name='lar_table_pc_7'>
+        <pose frame=''>4.51 0.45 0 0 -0 1.57080</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.51 0.45 0 0 -0 1.57080</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
+      <model name='lar_table_pc_8'>
+        <pose frame=''>4.51 -0.74 0 0 -0 1.57080</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.51 -0.74 0 0 -0 1.57080</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
       <model name='lar_chair_0'>
         <pose frame=''>-4.2805 0.9 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
@@ -553,10 +615,10 @@
       </model>
 
       <model name='lar_chair_7'>
-        <pose frame=''>2.8682 0.178849 0 0 0 -1.5708</pose>
+        <pose frame=''>2.565 -0.127 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>2.8682 0.178849 0 0 0 -1.5708</pose>
+          <pose frame=''>2.565 -0.127 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -564,10 +626,32 @@
       </model>
 
       <model name='lar_chair_8'>
-        <pose frame=''>2.82926 -0.778849 0 0 -0 1.5708</pose>
+        <pose frame=''>2.565 -0.983 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>2.82926 -0.778849 0 0 -0 1.5708</pose>
+          <pose frame=''>2.565 -0.983 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
+      <model name='lar_chair_9'>
+        <pose frame=''>4.22 0.47 0 0 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.22 0.47 0 0 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
+      <model name='lar_chair_10'>
+        <pose frame=''>4.22 -0.72 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.22 -0.72 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -575,10 +659,10 @@
       </model>
 
       <model name='lar_table_circular'>
-        <pose frame=''>2.84873 -0.278849 0 0 -0 0</pose>
+        <pose frame=''>2.565 -0.555 0 0 -0 0</pose> 
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>2.84873 -0.278849 0 0 -0 0</pose>
+          <pose frame=''>2.565 -0.555 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -601,6 +685,17 @@
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-3.0 -2.2 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+
+      <model name='lar_cabinet'>
+        <pose frame=''>4.675 -0.25 1.643 0 -0 3.1416</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.675 -0.25 1.643 0 -0 3.1416</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
