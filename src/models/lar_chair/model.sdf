@@ -36,7 +36,7 @@
       <collision name='collisions'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
-        <pose frame=''>0 -0.02 0.01 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
             <mesh>
               <uri>model://lar_chair/meshes/lar_chair.dae</uri>
