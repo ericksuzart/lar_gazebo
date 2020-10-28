@@ -8,7 +8,6 @@
 
   <!--  husky_gazebo args -->
   <arg name="laser_enabled" default="true" doc="Enable husky laser"/>
-  <arg name="kinect_enabled" default="false" doc="Enable husky kinect"/>
   <arg name="robot_namespace" default="/"/>
 
   <!-- include world launcher -->
@@ -21,7 +20,6 @@
   <!-- include husky_gazebo launcher -->
   <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
     <arg name="laser_enabled" value="$(arg laser_enabled)"/>
-    <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
     <arg name="robot_namespace" value="$(arg robot_namespace)"/>
     <arg name="x" value="0.6"/>
     <arg name="y" value="-3.5"/>
