@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
+
+
   <!-- gazebo args -->
   <arg name="world_name" default="$(find lar_gazebo)src/worlds/lar.world"/>
-  <arg name="paused" default="false" doc="Starts gazebo in paused mode" />
+  <arg name="paused" default="true" doc="Starts gazebo in paused mode" />
   <arg name="gui" default="true" doc="Starts gazebo gui" />
 
   <!--  husky_gazebo args -->
   <arg name="laser_enabled" default="true" doc="Enable husky laser"/>
   <arg name="robot_namespace" default="/"/>
-
+  <!-- Position of Husky -->
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="0.1"/>
+  <arg name="yaw" default="3.141592"/>
+  
   <!-- include world launcher -->
   <include file="$(find lar_gazebo)src/launch/lar_world.launch">
     <arg name="world_name" value="$(arg world_name)"/>
@@ -21,9 +28,9 @@
   <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
     <arg name="laser_enabled" value="$(arg laser_enabled)"/>
     <arg name="robot_namespace" value="$(arg robot_namespace)"/>
-    <arg name="x" value="0.6"/>
-    <arg name="y" value="-3.5"/>
-    <arg name="z" value="0.02"/>
-    <arg name="yaw" value="3.1415"/>
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="z" value="$(arg z)"/>
+    <arg name="yaw" value="$(arg yaw)"/>
   </include>
 </launch>
