@@ -32,14 +32,11 @@
                 <mu>100</mu>
                 <mu2>50</mu2>
               </ode>
-              <torsional>
-                <ode/>
-              </torsional>
             </friction>
+            <bounce/>
             <contact>
               <ode/>
             </contact>
-            <bounce/>
           </surface>
           <max_contacts>10</max_contacts>
         </collision>
@@ -322,7 +319,7 @@
       </model>
 
       <model name='lar_walls'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 1 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>0 0 1.52 0 -0 0</pose>
@@ -333,7 +330,7 @@
       </model>
 
       <model name='lar_floor'>
-        <pose frame=''>0 -1.25 0 0 -0 0</pose>
+        <pose frame=''>0 -0.25 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='floor'>
           <pose frame=''>0 -1.25 0 0 -0 0</pose>
@@ -344,7 +341,7 @@
       </model>
 
       <model name='lar_shelf'>
-        <pose frame=''>4.0 -4.35 0 0 0 1.57068</pose>
+        <pose frame=''>4.0 -3.35 0 0 0 1.57068</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4.0 -4.35 0 0 0 1.57068</pose>
@@ -355,7 +352,7 @@
       </model>
 
       <model name='lar_wardrobe_0'>
-        <pose frame=''>1.25 4.3 0 0 0 -1.57121</pose>
+        <pose frame=''>1.25 5.3 0 0 0 -1.57121</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>1.25 4.3 0 0 0 -1.57121</pose>
@@ -366,7 +363,7 @@
       </model>
 
       <model name='lar_wardrobe_1'>
-        <pose frame=''>4.6 -1.9 0 0 0 3.14143</pose>
+        <pose frame=''>4.6 -0.9 0 0 0 3.14143</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4.6 -1.9 0 0 0 3.14143</pose>
@@ -377,7 +374,7 @@
       </model>
 
       <model name='lar_table_great_0'>
-        <pose frame=''>1.9 -3.0 0 0 0 0</pose>
+        <pose frame=''>1.9 -2.0 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>1.9 -3.0 0 0 0 0</pose>
@@ -388,7 +385,7 @@
       </model>
 
       <model name='lar_table_great_1'>
-        <pose frame=''>-0.55 4.15 0 0 -0 1.5708</pose>
+        <pose frame=''>-0.55 5.15 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-0.55 4.15 0 0 -0 1.5708</pose>
@@ -399,7 +396,7 @@
       </model>
 
       <model name='lar_table_pc_0'>
-        <pose frame=''>-4.30 0.68 0 0 0 0</pose>
+        <pose frame=''>-4.30 1.68 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-4.30 0.68 0 0 0 0</pose>
@@ -410,7 +407,7 @@
       </model>
 
       <model name='lar_table_pc_1'>
-        <pose frame=''>-3.29 0.68 0 0 0 0</pose>
+        <pose frame=''>-3.29 1.68 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-3.29 0.68 0 0 0 0</pose>
@@ -421,7 +418,7 @@
       </model>
 
       <model name='lar_table_pc_2'>
-        <pose frame=''>-2.28 0.68 0 0 -0 0</pose>
+        <pose frame=''>-2.28 1.68 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-2.28 0.68 0 0 -0 0</pose>
@@ -432,7 +429,7 @@
       </model>
 
       <model name='lar_table_pc_3'>
-        <pose frame=''>-1.27 0.68 0 0 -0 0</pose>
+        <pose frame=''>-1.27 1.68 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-1.27 0.68 0 0 -0 0</pose>
@@ -443,7 +440,7 @@
       </model>
 
       <model name='lar_table_pc_4'>
-        <pose frame=''>-0.26 0.68 0 0 -0 0</pose>
+        <pose frame=''>-0.26 1.68 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-0.26 0.68 0 0 -0 0</pose>
@@ -454,7 +451,7 @@
       </model>
 
       <model name='lar_table_pc_5'>
-        <pose frame=''>4 1.8 0 0 0 -3.14159</pose>
+        <pose frame=''>4 2.8 0 0 0 -3.14159</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>4 1.8 0 0 0 -3.14159</pose>
@@ -465,7 +462,7 @@
       </model>
 
       <model name='lar_table_pc_6'>
-        <pose frame=''>2.9 1.8 0 0 -0 3.14159</pose>
+        <pose frame=''>2.9 2.8 0 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>2.9 1.8 0 0 -0 3.14159</pose>
@@ -476,7 +473,7 @@
       </model>
 
       <model name='lar_chair_0'>
-        <pose frame=''>-4.2805 0.9 0 0 0 -1.5708</pose>
+        <pose frame=''>-4.2805 1.9 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-4.2805 0.9 0 0 0 -1.5708</pose>
@@ -487,7 +484,7 @@
       </model>
 
       <model name='lar_chair_1'>
-        <pose frame=''>-3.2705 0.9 0 0 0 -1.5708</pose>
+        <pose frame=''>-3.2705 1.9 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-3.2705 0.9 0 0 0 -1.5708</pose>
@@ -498,7 +495,7 @@
       </model>
 
       <model name='lar_chair_2'>
-        <pose frame=''>-2.2605 0.9 0 0 0 -1.5708</pose>
+        <pose frame=''>-2.2605 1.9 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-2.2605 0.9 0 0 0 -1.5708</pose>
@@ -509,7 +506,7 @@
       </model>
 
       <model name='lar_chair_3'>
-        <pose frame=''>-1.2505 0.9 0 0 0 -1.5708</pose>
+        <pose frame=''>-1.2505 1.9 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-1.2505 0.9 0 0 0 -1.5708</pose>
@@ -520,7 +517,7 @@
       </model>
 
       <model name='lar_chair_4'>
-        <pose frame=''>-0.2405 0.9 0 0 0 -1.5708</pose>
+        <pose frame=''>-0.2405 1.9 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-0.2405 0.9 0 0 0 -1.5708</pose>
@@ -531,7 +528,7 @@
       </model>
 
       <model name='lar_chair_5'>
-        <pose frame=''>2.880530 1.58 0 0 -0 1.5708</pose>
+        <pose frame=''>2.880530 2.58 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>2.880530 1.58 0 0 -0 1.5708</pose>
@@ -542,7 +539,7 @@
       </model>
 
       <model name='lar_chair_6'>
-        <pose frame=''>3.98053 1.58 0 0 -0 1.5708</pose>
+        <pose frame=''>3.98053 2.58 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>3.98053 1.58 0 0 -0 1.5708</pose>
@@ -553,7 +550,7 @@
       </model>
 
       <model name='lar_chair_7'>
-        <pose frame=''>2.8682 0.178849 0 0 0 -1.5708</pose>
+        <pose frame=''>2.8682 1.178849 0 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>2.8682 0.178849 0 0 0 -1.5708</pose>
@@ -564,7 +561,7 @@
       </model>
 
       <model name='lar_chair_8'>
-        <pose frame=''>2.82926 -0.778849 0 0 -0 1.5708</pose>
+        <pose frame=''>2.82926 0.221151 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>2.82926 -0.778849 0 0 -0 1.5708</pose>
@@ -575,7 +572,7 @@
       </model>
 
       <model name='lar_table_circular'>
-        <pose frame=''>2.84873 -0.278849 0 0 -0 0</pose>
+        <pose frame=''>2.84873 0.721151 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>2.84873 -0.278849 0 0 -0 0</pose>
@@ -586,7 +583,7 @@
       </model>
 
       <model name='box_0'>
-        <pose frame=''>-0.80 -2.3 0 0 -0 1.5708</pose>
+        <pose frame=''>-0.80 -1.3 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-0.80 -2.3 0 0 -0 1.5708</pose>
@@ -597,7 +594,7 @@
       </model>
 
       <model name='box_1'>
-        <pose frame=''>-3.0 -2.2 0 0 -0 1.5708</pose>
+        <pose frame=''>-3.0 -1.2 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-3.0 -2.2 0 0 -0 1.5708</pose>
