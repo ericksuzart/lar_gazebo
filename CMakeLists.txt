@@ -42,7 +42,7 @@ catkin_package(
     gazebo_ros
 )
 
-roslaunch_add_file_check(src/launch)
+roslaunch_add_file_check(launch)
 
 ###########
 ## Build ##
