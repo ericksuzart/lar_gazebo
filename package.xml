@@ -25,6 +25,7 @@
   <build_export_depend>roslaunch</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>rviz</build_export_depend>
+  <build_depend>gazebo_ros</build_depend>
 
 
   <exec_depend>roscpp</exec_depend>
@@ -32,6 +33,7 @@
   <exec_depend>rospy</exec_depend>
   <exec_depend>rviz</exec_depend>
   <exec_depend>xacro</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
