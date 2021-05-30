@@ -2,7 +2,7 @@
 
 <launch>
   <!-- gazebo args -->
-  <arg name="world_name" default="$(find lar_gazebo)src/worlds/lar.world" doc="Default world"/>-->
+  <arg name="world_name" default="$(find lar_gazebo)worlds/lar.world" doc="Default world"/>-->
   <arg name="paused" default="false" doc="Starts gazebo in paused mode" />
   <arg name="gui" default="true" doc="Starts gazebo gui" />
 
