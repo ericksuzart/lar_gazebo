@@ -31,16 +31,6 @@ Use the command below in your terminal to setup and launch gazebo with all model
 roslaunch lar_gazebo lar_world.launch
 ```
 
-### With [Husky](http://wiki.ros.org/Robots/Husky)
-
-You can do it by typing in your terminal:
-
-```{bash}
-roslaunch lar_gazebo lar_husky.launch
-```
-
-> You must install the husky packages of simulation in your machine to perform the command above. Checkout [Simulating Husky](http://wiki.ros.org/husky_gazebo/Tutorials/Simulating%20Husky) documentation to installation tutorial.
-
 ### Disable shadows
 
 If you open through the launchers, it's open automatically with shadows disabled.
